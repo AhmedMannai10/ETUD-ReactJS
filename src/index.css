@@ -4,10 +4,11 @@
 
 @layer base {
   input {
-    @apply text-sm rounded-lg bg-[#eaeaea] border-gray-200 text-text-light dark:bg-secondary-dark dark:text-text-dark block w-full p-2.5 ;
+    @apply text-sm rounded-lg bg-[#eaeaea] focus:dark:border-gray-200 dark:focus:border-2 border-2 border-transparent text-text-light dark:bg-secondary-dark dark:text-text-dark block w-full p-2.5 focus:border-gray-600 ;
   }
+  
   body {
-    @apply dark:bg-[#000008] bg-[#fff] m-0 p-0; 
+    @apply dark:bg-[#000008] bg-[#fff] m-0 p-0 min-h-screen; 
   }
 
   
@@ -31,17 +32,20 @@
   font-weight: 500;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  -webkit-appearance: none;
 }
 body {
   margin: 0;
   padding: 0;
   margin-top: 0.0em;
+
 }
 
+
+textarea, input { outline: none; }
