@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const ThemeSwitcher = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     const isDarkMode = localStorage.getItem('darkMode') === 'true';
@@ -20,7 +20,7 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className=" z-50 px-4 py-2 rounded-md bg-gray-800 text-white"
+      className="fixed right-5 bottom-10 z-50 px-4 py-2 rounded-md bg-gray-800 text-white"
     >
       {darkMode ? 'Light Mode' : 'Dark Mode'}
     </button>

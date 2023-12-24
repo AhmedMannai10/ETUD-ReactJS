@@ -15,7 +15,7 @@ export default {
         "secondary-dark": "#1f1f1f",
         "text-dark": "#fff",
         "text-secondary-dark": "#242424",
-        "text-secondary-light": "473bd5",
+        "text-secondary-light": "#6f6f6f",
       
  
       "primary-100":"#473bd5",
