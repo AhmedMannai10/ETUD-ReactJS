@@ -1,23 +1,28 @@
+import CourseLength from './CourseLength'
 
 type Course = {
   thumbnail: string;
   title: string;
   description: string;
   category: string;
-  lectures: Lecture[];
-  teacher: Teacher
+  chapters: Chapter[];
+  teacher: Teacher;
+  courseLength: CourseLength;
 }
-type Lecture = {
+type Chapter = {
   title: string;
-  description: string;
+  lessons: Lesson[];
+}
+type Lesson = {
+  title: string;
   videoURL: string;
-  length: number;
+  length: CourseLength;
 }
 type Teacher = {
   picture: string;
   firstName: string;
-  LastName: string;
+  lastName: string;
 }
-export { Lecture, Course, Teacher };
+export type { Lesson, Course, Teacher, Chapter };
 
 
