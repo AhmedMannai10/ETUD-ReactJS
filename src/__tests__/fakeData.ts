@@ -19,23 +19,23 @@ const sampleTeachers: Teacher[] = [
 const sampleLessons: Lesson[] = [
   {
     title: 'Introduction to JavaScript',
-    videoURL: 'https://example.com/intro-to-js',
-    length: new CourseLength(0, 15, 30)
+    videoURL: 'https://www.youtube.com/embed/lkIFF4maKMU?si=watFfkyrWbY6te7S',
+    length: (new CourseLength(0, 15, 30)).toString(),
   },
   {
     title: 'Intermediate JavaScript',
-    videoURL: 'https://example.com/intermediate-js',
-    length: new CourseLength(1, 45, 0)
+    videoURL: 'https://www.youtube.com/embed/m55PTVUrlnA?si=rsuvm8g4w63PXaxB',
+    length: (new CourseLength(1, 45, 0)).toString(),
   },
   {
     title: 'Advanced JavaScript',
-    videoURL: 'https://example.com/advanced-js',
-    length: new CourseLength(1, 30, 0)
+    videoURL: 'https://www.youtube.com/embed/-uleG_Vecis?si=sUdYrGLf8QYyY6qs',
+    length: (new CourseLength(1, 30, 0)).toString(),
   },
   {
     title: 'JavaScript Frameworks',
-    videoURL: 'https://example.com/js-frameworks',
-    length: new CourseLength(2, 0, 15)
+    videoURL: 'https://www.youtube.com/embed/9emXNzqCKyg?si=_xs2VJgafGBOc7x5',
+    length: (new CourseLength(2, 0, 15)).toString(),
   }
 ];
 

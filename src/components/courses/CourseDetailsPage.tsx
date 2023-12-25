@@ -12,6 +12,8 @@ export default function CourseDetailsPage() {
   const location = useLocation();
   const { course } = location.state;
 
+  const chapterNumber = 0;
+  const lessonNumber = 0;
 
 
   // TODO: Fech courrse datails using the course Slug
@@ -24,8 +26,7 @@ export default function CourseDetailsPage() {
           src="https://www.youtube.com/embed/4WiH9pf2ULQ?si=2TzjHgKzRDOgi528"
           width="100%"
           title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen>
         </iframe>
       </div>
       <div className='px-2'>
@@ -43,7 +44,10 @@ export default function CourseDetailsPage() {
       </div>
       <div className='flex justify-center'>
         <button className=' black-button'
-          onClick={() => { navigator(`/courses/${slugify(course.title)}/${slugify(course.lectureSlug)}`, { state: { course } }) }}> Enroll To this Course</button>
+          onClick={() => {
+            navigator(`/courses/${slugify(course.title)}/${slugify(course.chapters[0].lessons[0].title)}`, { state: { course, chapterNumber, lessonNumber } })
+          }}> Enroll To this Course
+        </button>
       </div>
       <section className='px-1'>
         more information about the course

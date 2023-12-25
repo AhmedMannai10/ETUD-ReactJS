@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="sticky top-0 backdrop-blur-sm flex items-center flex-row-reverse w-screen border-gray-300 dark:border-gray-600 border-b h-14 ">
+      <div className="fixed top-0 backdrop-blur-3xl flex items-center flex-row-reverse w-screen border-gray-300 dark:border-gray-600 border-b h-14 ">
         {nav ?
           <button type="button" className="w-fit h-fit  
         flex-col justify-center items-center p-2  " onClick={() => setNav(!nav)}>
@@ -29,9 +29,9 @@ export default function Header() {
       </div>
 
       {nav &&
-        <div className="fixed  flex justify-center w-full bottom-0 top-16 ">
-          <div className=" backdrop-blur-xl flex  flex-col justify-center items-start h-fit gap-2
-            w-full mx-6 border p-10 rounded-lg max-w-md min-w-sm " >
+        <div className="fixed dark:bg-primary-dark bg-primary-light  flex justify-center h-screen w-screen bottom-0 top-14 ">
+          <div className=" w-full h-full flex  flex-col justify-start items-start  gap-2
+             p-10 max-w-md min-w-sm " >
             <button onClick={() => handleRouteChange("/")} type="button" className=" text-text-secondary-light dark:text-gray-400 hover:text-text-light dark:hover:text-text-dark">
               Home
             </button>

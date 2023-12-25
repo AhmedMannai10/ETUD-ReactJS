@@ -16,7 +16,7 @@ type Chapter = {
 type Lesson = {
   title: string;
   videoURL: string;
-  length: CourseLength;
+  length: string;
 }
 type Teacher = {
   picture: string;
