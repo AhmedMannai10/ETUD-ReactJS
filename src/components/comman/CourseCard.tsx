@@ -7,12 +7,13 @@ export default function CourseCard(props: { course: Course }) {
 
   const { course } = props;
   return (
-    <div className="flex flex-col dark:bg-[#111] dark:border-[#333] border-2 m-1 bg-[#eee] border-[#ccc]"
+    <div className="flex flex-col  "
       onClickCapture={() => { navigator(`/courses/${slugify(course.title)}`, { state: { course } }) }}>
-      <img className="bg-black h-52 rounded-sm  object-cover" src={course.thumbnail} alt="__course__ thumbnail " />
-      <div className='px-1 py-1'>
-        <div>
-          <h4 className=' text-sm'>{course.title}</h4>
+      <img className="bg-black h-36 object-cover " src={course.thumbnail} alt="__course__ thumbnail " />
+      <span className=' absolute bottom-12 right-1  z-10 bg-primary-light dark:bg-primary-dark rounded-sm px-1  text-xs' >{course.courseLength.toString()}</span>
+      <div className="flex flex-col text-md font-normal  leading-tight">
+        <div className='m-1'>
+          <h4 className=' overflow-ellipsis '>{course.title}</h4>
           <p className=" text-xs font-normal">{course.description}</p>
         </div>
       </div>

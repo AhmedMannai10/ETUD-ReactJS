@@ -54,7 +54,7 @@ const sampleChapters: Chapter[] = [
 // Sample Courses
 const sampleCourses: Course[] = [
   {
-    thumbnail: 'https://bstefanski.com/_next/image?url=%2Fstatic%2Fthumbnails%2Fhow-to-resolve-git-fatal-the-remote-end-hung-up-unexpectedly.png&w=640&q=75',
+    thumbnail: 'https://bstefanski.com/_next/image?url=%2Fstatic%2Fthumbnails%2Fhow-to-easily-port-styled-components-to-linaria.png&w=640&q=75',
     title: 'JavaScript Mastery',
     description: 'A comprehensive guide to JavaScript',
     category: 'Programming',
@@ -63,7 +63,7 @@ const sampleCourses: Course[] = [
     courseLength: new CourseLength(5, 0, 0)
   },
   {
-    thumbnail: 'https://bstefanski.com/_next/image?url=%2Fstatic%2Fthumbnails%2Fhow-to-resolve-git-fatal-the-remote-end-hung-up-unexpectedly.png&w=640&q=75',
+    thumbnail: 'https://bstefanski.com/_next/image?url=%2Fstatic%2Fthumbnails%2Fhow-to-use-custom-theme-in-vim.png&w=640&q=75',
     title: 'React Fundamentals',
     description: 'Master the basics of React',
     category: 'Web Development',
@@ -72,7 +72,7 @@ const sampleCourses: Course[] = [
     courseLength: new CourseLength(4, 30, 0)
   },
   {
-    thumbnail: 'https://bstefanski.com/_next/image?url=%2Fstatic%2Fthumbnails%2Fhow-to-resolve-git-fatal-the-remote-end-hung-up-unexpectedly.png&w=640&q=75',
+    thumbnail: 'https://bstefanski.com/_next/image?url=%2Fstatic%2Fthumbnails%2Fselecting-the-right-tech-stack-for-large-scale-reactjs-project.png&w=640&q=75',
     title: 'Node.js Essentials',
     description: 'Learn the essentials of Node.js',
     category: 'Backend Development',
